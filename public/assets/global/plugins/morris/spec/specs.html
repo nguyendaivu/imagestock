@@ -1,0 +1,38 @@
+<!doctype html>
+
+<!-- Mirrored from lms.nuance.com/common/metronic_v3.5/theme/assets/global/plugins/morris/spec/specs.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Dec 2014 16:22:29 GMT -->
+<head>
+  <meta charset="utf-8">
+  <title>morris.js tests</title>
+  <link rel="stylesheet" href="../bower_components/mocha/mocha.html" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../morris.css" type="text/css" media="screen" />
+  <!-- jQuery packaging changed for 2.1.0, so try to load both paths, one will work. -->
+  <script src="../bower_components/jquery/dist/jquery.html"></script>
+  <script src="../bower_components/jquery/jquery.html"></script>
+  <script type="text/javascript" src="../bower_components/raphael/raphael-min.html"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+
+  <script type="text/javascript" src="../bower_components/mocha/mocha-2.html"></script>
+  <script type="text/javascript" src="../bower_components/chai/chai.html"></script>
+  <script type="text/javascript" src="../bower_components/chai-jquery/chai-jquery.html"></script>
+  <script type="text/javascript" src="../bower_components/sinon/index.html"></script>
+  <script type="text/javascript" src="../bower_components/sinon-chai/lib/sinon-chai.html"></script>
+  <script>
+    mocha.setup('bdd');
+    should = chai.should();
+  </script>
+
+  <script type="text/javascript" src="../morris.js"></script>
+  <script type="text/javascript" src="../build/spec.html"></script>
+  <div id="test" style="width: 400px; height: 200px;"></div>
+  <script>
+    if (navigator.userAgent.indexOf('PhantomJS') < 0) {
+      mocha.run();
+    }
+  </script>
+</body>
+
+<!-- Mirrored from lms.nuance.com/common/metronic_v3.5/theme/assets/global/plugins/morris/spec/specs.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Dec 2014 16:22:45 GMT -->
+</html>

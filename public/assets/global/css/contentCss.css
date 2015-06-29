@@ -1,0 +1,13 @@
+.field_button span, .field_span{
+    cursor: pointer;
+    margin: 2px;
+    padding: 0px 10px;
+    color: #000;
+    font-weight: bold;
+    background-color: #d7d7d7;
+    border: 1px solid #949494;
+    display: inline-block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
